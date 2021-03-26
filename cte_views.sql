@@ -52,7 +52,3 @@ LEFT JOIN
 	TestCTE2 
 	ON	
 	 	Employee.BusinessEntityID = TestCTE2.BusinessEntityID
-
-
-
-
