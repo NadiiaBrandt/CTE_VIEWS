@@ -44,8 +44,14 @@ SELECT
 	,TestCTE2.PhoneNumber
 FROM	
 	HumanResources.Employee
-LEFT JOIN TestCTE1 ON Employee.BusinessEntityID = TestCTE1.BusinessEntityID
-LEFT JOIN TestCTE2 ON Employee.BusinessEntityID = TestCTE2.BusinessEntityID
+LEFT JOIN 
+	TestCTE1 
+	ON
+		Employee.BusinessEntityID = TestCTE1.BusinessEntityID
+LEFT JOIN
+	TestCTE2 
+	ON	
+	 	Employee.BusinessEntityID = TestCTE2.BusinessEntityID
 
 
 
